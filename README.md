@@ -7,7 +7,7 @@
 1. Клонируйте репозиторий или скачайте файлы проекта.
 
 
-$ git clone https://github.com/CurrencyRates.git
+$ git clone https://github.com/paych3ck/CurrencyRates.git
 
 
 2. Убедитесь, что у вас установлен Python версии 3 и выше.
