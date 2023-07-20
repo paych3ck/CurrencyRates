@@ -7,19 +7,19 @@
 1. Клонируйте репозиторий или скачайте файлы проекта.
 
 
-$ git clone https://github.com/paych3ck/CurrencyRates.git
+`$ git clone https://github.com/paych3ck/CurrencyRates.git`
 
 
 2. Убедитесь, что у вас установлен Python версии 3 и выше.
 
 
-python --version
+`python --version`
 
 
 3. Установите необходимые сторонние библиотеки, запустив команду:
 
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 
 ## Использование
@@ -29,7 +29,7 @@ pip install -r requirements.txt
 Для получения курса валюты за определенную дату, используйте следующую команду:
 
 
-python currency_rates.py --code=<КОД_ВАЛЮТЫ> --date=<ДАТА>
+`python currency_rates.py --code=<КОД_ВАЛЮТЫ> --date=<ДАТА>`
 
 
 Замените <КОД_ВАЛЮТЫ> на трехбуквенный код валюты в формате ISO 4217 (например, USD для доллара США) и <ДАТА> на дату в формате YYYY-MM-DD.
@@ -37,7 +37,7 @@ python currency_rates.py --code=<КОД_ВАЛЮТЫ> --date=<ДАТА>
 Пример:
 
 
-python currency_rates.py --code=USD --date=2022-10-08
+`python currency_rates.py --code=USD --date=2022-10-08`
 
 
 Вывод будет выглядеть следующим образом:
@@ -65,7 +65,7 @@ USD (Доллар США): 61,2475
 Вы можете запустить тесты для проверки функциональности программы. Для этого введите следующую команду (дополнительно можно использовать параметр verbosity):
 
 
-python -m unittest cr_tests.py
+`python -m unittest cr_tests.py`
 
 
 Тесты проверяют следующие сценарии:
