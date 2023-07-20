@@ -5,6 +5,7 @@ from currency_rates import get_currency_rate
 import unittest
 import datetime
 
+
 class CurrencyRateTestCase(unittest.TestCase):
     def test_get_currency_rate_successful(self):
         code = 'USD'
@@ -35,12 +36,14 @@ class CurrencyRateTestCase(unittest.TestCase):
 
     def test_get_currency_rate_future_date(self):
         code = 'USD'
-        future_date = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%Y-%m-%d')
+        future_date = (datetime.datetime.now() +
+                       datetime.timedelta(days=1)).strftime('%Y-%m-%d')
         expected_output = 'Введите дату до сегодняшнего дня!\n'
 
         with patch('sys.stdout', new=StringIO()) as fake_output:
             get_currency_rate(code, future_date)
             self.assertEqual(fake_output.getvalue(), expected_output)
+
 
 if __name__ == '__main__':
     unittest.main()
