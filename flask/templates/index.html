@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Курс валюты к рублю</title>
+</head>
+<body>
+    <h1>Получить курс валюты к рублю на указанную дату</h1>
+    <form method="POST" action="/">
+        {{ form.csrf_token }}
+        {{ form.code.label }} {{ form.code }}
+        {{ form.date.label }} {{ form.date }}
+        {{ form.submit }}
+        {{ result }}
+    </form>
+</body>
+</html>
